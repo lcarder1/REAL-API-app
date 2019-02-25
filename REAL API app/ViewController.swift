@@ -9,10 +9,14 @@
 import UIKit
 
 class CurrentlyViewController: UITableViewController {
+    
+    var currently = [[String: String]]()
+    let apiKey = "05967568c1605ce17149c4b66b8f6c61"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Weather Information"
+        let query = "https://api.darksky.net/forecast/05967568c1605ce17149c4b66b8f6c61/37.8267,-122.4233"
     }
 
 
